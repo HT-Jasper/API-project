@@ -1,26 +1,97 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-html{
-     font-size: 16px;
-     background-color: black;
+html {
+    font-size: 18px;
 }
 
 body {
+    background-image: url("API-background-photo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
     font-family: 'Roboto', sans-serif;
-    margin: auto;
-    padding: auto;
-    text-align: center;
-}
-
-h1 {
-    font-size: 2.5rem;
-    margin-top: 20px;
-    color: yellow
-}
-
-div {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
     color: white;
 }
 
+.container {
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    padding: 30px;
+    margin-bottom: 25px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+h1 {
+    font-size: 2.8rem;
+    color: #f1c40f;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+h2 {
+    margin-bottom: 15px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 10px;
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.location {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+}
+
+#citySearchBtn {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    background-color: #4a90e2;
+    color: white;
+    cursor: pointer;
+}
+
+#citySearchBtn:hover {
+    background-color: #357abd;
+    transform: translateY(-2px);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+    text-align: left;
+}
+
+li {
+    background: rgba(0, 0, 0, 0.2);
+    margin-bottom: 8px;
+    padding: 10px 15px;
+    border-radius: 6px;
+}
